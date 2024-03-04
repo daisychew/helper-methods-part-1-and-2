@@ -9,7 +9,7 @@
 </div>
 
 <div>
-  <a href="<$= new_movie_path %>">Add a new movie</a>
+  <a href="<%= new_movie_path %>">Add a new movie</a>
 </div>
 
 <hr>
@@ -62,7 +62,7 @@
     </td>
 
     <td>
-      <a href="/movies/<%= a_movie.id %>">
+      <a href="<%= movie_path(a_movie) %>">
         Show details
       </a>
     </td>
